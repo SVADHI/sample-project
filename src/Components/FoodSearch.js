@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Recipe from "./Recipe";
+import "./Recipe.css";
 
 const FoodSearch = () => {
   const [recepies, setRecepies] = useState([]);
@@ -27,21 +28,28 @@ const FoodSearch = () => {
   };
   return (
     <>
-      <h1> Food Search </h1>
-      <input type="text" placeholder="search for food" onChange={searchInput} />
-      <button onClick={onSubmitSearch}>submit</button>
-
-      {recepies.map((recepie) => {
-        return (
-          <Recipe
-            key={recepie.recipe.label}
-            label={recepie.recipe.label}
-            calories={recepie.recipe.calories}
-            image={recepie.recipe.image}
-            ingredients={recepie.recipe.ingredients}
-          />
-        );
-      })}
+      <div className="search-form">
+        <h1> Food Search </h1>
+        <input
+          type="text"
+          placeholder="search for food"
+          onChange={searchInput}
+        />
+        <button onClick={onSubmitSearch}>submit</button>
+        <div className="recipe-list">
+          {recepies.map((recepie) => {
+            return (
+              <Recipe
+                key={recepie.recipe.label}
+                label={recepie.recipe.label}
+                calories={recepie.recipe.calories}
+                image={recepie.recipe.image}
+                ingredients={recepie.recipe.ingredients}
+              />
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };
