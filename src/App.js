@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
+import FoodSearch from "./Components/FoodSearch";
 
 function App() {
   return (
     <div className="App">
-      <p>This is sample project</p>
-      <div>Hello this is another code </div>
+      <FoodSearch />
     </div>
   );
 }
