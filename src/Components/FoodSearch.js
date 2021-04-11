@@ -38,6 +38,7 @@ const FoodSearch = () => {
             label={recepie.recipe.label}
             calories={recepie.recipe.calories}
             image={recepie.recipe.image}
+            ingredients={recepie.recipe.ingredients}
           />
         );
       })}
