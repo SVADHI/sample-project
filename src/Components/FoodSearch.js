@@ -32,10 +32,13 @@ const FoodSearch = () => {
         <h1> Food Search </h1>
         <input
           type="text"
+          className="search-input"
           placeholder="search for food"
           onChange={searchInput}
         />
-        <button onClick={onSubmitSearch}>submit</button>
+        <button onClick={onSubmitSearch} className="search-btn">
+          submit
+        </button>
         <div className="recipe-list">
           {recepies.map((recepie) => {
             return (
