@@ -8,9 +8,9 @@ import UseRefComponent from "./Components/UseRefComponent";
 function App() {
   return (
     <div className="App">
-      {/* <FoodSearch /> */}
+      <FoodSearch />
       {/*  <Position /> */}
-      <ParentFunction />
+      {/*  <ParentFunction /> */}
       {/*  <UseRefComponent /> */}
     </div>
   );

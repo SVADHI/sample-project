@@ -23,8 +23,10 @@ const FoodSearch = () => {
     setQuery(e.target.value);
   };
 
-  const onSubmitSearch = () => {
-    getData();
+  const onSubmitSearch = (e) => {
+    if (e.key === "Enter") {
+      getData();
+    }
   };
   return (
     <>
@@ -35,6 +37,7 @@ const FoodSearch = () => {
           className="search-input"
           placeholder="search for food"
           onChange={searchInput}
+          onKeyPress={onSubmitSearch}
         />
         <button onClick={onSubmitSearch} className="search-btn">
           submit

@@ -4,6 +4,8 @@
   background-color: gainsboro;
   text-align: left;
   margin: 10px;
+  height: 700px;
+  width: 700px;
 }
 .serach-form {
   height: 10vh;
@@ -17,8 +19,8 @@
 }
 .recipe img {
   border-radius: 5rem;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   align-items: center;
 }
 
@@ -29,4 +31,5 @@
 .search-btn {
   height: 2.5rem;
   font-weight: bold;
+  border-radius: 1rem;
 }
