@@ -5,16 +5,19 @@ import Position from "./Components/Position";
 import ParentFunction from "./Components/ParentFuction";
 import UseRefComponent from "./Components/UseRefComponent";
 import ComponentOne from "./Components/Context/ComponentOne";
+import { StrictMode } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <ComponentOne />
-      {/*    <FoodSearch /> */}
-      {/*  <Position /> */}
-      {/*  <ParentFunction /> */}
-      {/*  <UseRefComponent /> */}
-    </div>
+    <StrictMode>
+      <div className="App">
+        <ComponentOne />
+        {/*    <FoodSearch /> */}
+        {/*  <Position /> */}
+        {/*  <ParentFunction /> */}
+        {/*  <UseRefComponent /> */}
+      </div>
+    </StrictMode>
   );
 }
 

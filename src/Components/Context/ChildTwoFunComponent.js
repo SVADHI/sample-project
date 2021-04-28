@@ -10,12 +10,10 @@ const ChildTwoFunComponent = () => {
       <Suricontext.Consumer>
         {(context) => {
           return (
-            <div>
-              <p>
-                hello this is functional component context {context.name}-
-                {context.age}
-              </p>
-            </div>
+            <p>
+              hello this is functional component context {context.name}-
+              {context.age}
+            </p>
           );
         }}
       </Suricontext.Consumer>

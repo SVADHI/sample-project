@@ -3,7 +3,7 @@ import { SurContext, Suricontext } from "./ComponentOne";
 class ChildTwo extends Component {
   render() {
     return (
-      <div>
+      <>
         <Suricontext.Consumer>
           {(value) => {
             return (
@@ -13,7 +13,7 @@ class ChildTwo extends Component {
             );
           }}
         </Suricontext.Consumer>
-      </div>
+      </>
     );
   }
 }

@@ -17,12 +17,12 @@ class ComponentOne extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <p>This is component one</p>
         <Suricontext.Provider value={this.state}>
           <ChildOne />
         </Suricontext.Provider>
-      </div>
+      </>
     );
   }
 }
