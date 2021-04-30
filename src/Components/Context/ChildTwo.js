@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { SurContext, Suricontext } from "./ComponentOne";
+import { Suricontext } from "./ComponentOne";
 class ChildTwo extends Component {
   render() {
     return (

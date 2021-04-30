@@ -6,12 +6,14 @@ import ParentFunction from "./Components/ParentFuction";
 import UseRefComponent from "./Components/UseRefComponent";
 import ComponentOne from "./Components/Context/ComponentOne";
 import { StrictMode } from "react";
+import Redux from "./Components/Context/Redux";
 
 function App() {
   return (
     <StrictMode>
       <div className="App">
-        <ComponentOne />
+        {/* <ComponentOne /> */}
+        <Redux />
         {/*    <FoodSearch /> */}
         {/*  <Position /> */}
         {/*  <ParentFunction /> */}
