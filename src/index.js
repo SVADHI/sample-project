@@ -7,6 +7,7 @@ import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import ButtonReducer from "./Store/Reducers/ButtonReducer";
+//import Buttondata from "./Store/Actions/buttonActions";
 
 const store = createStore(ButtonReducer, applyMiddleware(thunk));
 ReactDOM.render(

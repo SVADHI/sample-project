@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, memo } from "react";
 import { Suricontext } from "./ComponentOne";
 
 const ChildTwoFunComponent = () => {
@@ -35,16 +35,44 @@ const ChildTwoFunComponent = () => {
   }
   console.log(reverseString(name));
 
-  //console.log(Object.keys(obj));
-  //console.log(Object.values(obj));
+  const objtest = { name: "suri", age: 34, profession: "software" };
+
+  console.log(Object.keys(objtest));
+  console.log(Object.values(objtest));
 
   const suriobj = { name: "suri", age: 32 };
 
   /* const newobj = Object.assign({}, suriobj, { location: "nellore" });
   console.log(newobj); */
 
-  console.log(suriobj.name1 || "ramu");
+  console.log("hello", suriobj?.name1);
 
+  const video = document.getElementById("video");
+
+  /*   function counter() {
+    var counter = 0;
+    setTimeout(function () {
+      var innerCounter = 0;
+      counter += 1;
+      alert("counter:" + counter);
+      setTimeout(function () {
+        counter += 1;
+        innerCounter += 1;
+        alert("counter:" + counter + "innercounter:" + innerCounter);
+      }, 500);
+    }, 1000);
+  } 
+
+  counter();*/
+
+  const obj1 = { a: 1, b: 2, c: 3 };
+
+  const obj2 = obj1;
+
+  obj2.a = 44;
+
+  console.log(obj1);
+  console.log(obj2);
   return (
     <div>
       <Suricontext.Consumer>
@@ -79,4 +107,4 @@ const ChildTwoFunComponent = () => {
   );
 };
 
-export default ChildTwoFunComponent;
+export default memo(ChildTwoFunComponent);

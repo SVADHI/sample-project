@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import * as actions from "../../Store/Actions";
+import * as actions from "../../Store/Actions/index";
 const Redux = (props) => {
   //const [count, setcount] = useState(count);
 
