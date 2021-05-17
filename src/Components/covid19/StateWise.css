@@ -1,0 +1,19 @@
+.text-center{
+    text-align: center;
+}
+
+.table{
+    width: 90%;
+    height: 2rem;
+    border: 2px solid grey;
+    
+}
+
+.caption-background{
+    background-color: grey;
+}
+
+.search-input{
+    width: 90rem;
+    margin-bottom: 5px;
+}

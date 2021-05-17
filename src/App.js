@@ -10,6 +10,7 @@ import Redux from "./Components/Context/Redux";
 import UseEffectHook from "./Components/UseEffectHook";
 import Modal from "./Components/Modal";
 import GetDerivedStateFromProps from "./getDerivedStateFromProps";
+import StateWise from "./Components/covid19/StateWise";
 
 function App() {
   const [show, setshow] = useState(false);
@@ -39,7 +40,9 @@ function App() {
         {/*  <Position /> */}
         {/*  <ParentFunction /> */}
         {/*  <UseRefComponent /> */}
-        <GetDerivedStateFromProps favouriteColor="yellow" />
+        {/* <GetDerivedStateFromProps favouriteColor="yellow" /> */}
+      {/* <FoodSearch />  */}
+         <StateWise />
       </div>
     </StrictMode>
   );
