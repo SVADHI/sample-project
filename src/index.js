@@ -7,9 +7,16 @@ import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import ButtonReducer from "./Store/Reducers/ButtonReducer";
+import ContactsReducer from "./Store/Reducers/ContactsReducer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import Buttondata from "./Store/Actions/buttonActions";
+import SagaButtonReducer from "./Store/Reducers/SagaButtonReducer"
+import {watchButtonActions} from "./Store/Sagas/buttonActions.sagas"
+import createSagaMiddleWare from "redux-saga";
+const sagaMiddleWare = createSagaMiddleWare();
 
-const store = createStore(ButtonReducer, applyMiddleware(thunk));
+const store = createStore(SagaButtonReducer, applyMiddleware(sagaMiddleWare));
+sagaMiddleWare.run(watchButtonActions);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

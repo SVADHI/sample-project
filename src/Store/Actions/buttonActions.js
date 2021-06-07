@@ -5,6 +5,18 @@ const initialState = {
   count: 11,
 };
 
+export const increment =()=>{
+  return {
+    type:'INCREMENT'
+  }
+}
+
+export const getAllUsers =()=>{
+  return {
+    type:'GETALL_USERS'
+  }
+}
+
 export const incrementCount = (res) => {
   return {
     type: INCREMENT_BUTTON,

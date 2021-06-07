@@ -11,6 +11,9 @@ import UseEffectHook from "./Components/UseEffectHook";
 import Modal from "./Components/Modal";
 import GetDerivedStateFromProps from "./getDerivedStateFromProps";
 import StateWise from "./Components/covid19/StateWise";
+import Test from "./Components/Route/Test";
+import ContactList from "./Components/ContactList/ContactList";
+import SagaExample from "./Components/Redux-saga/SagaExample";
 
 function App() {
   const [show, setshow] = useState(false);
@@ -30,7 +33,7 @@ function App() {
 
   return (
     <StrictMode>
-      <div className="App">
+      <div >
         {/* <ComponentOne /> */}
         {/* <UseEffectHook />  */}
         {/*   <button onClick={() => setshow(true)}>click me</button>
@@ -42,7 +45,10 @@ function App() {
         {/*  <UseRefComponent /> */}
         {/* <GetDerivedStateFromProps favouriteColor="yellow" /> */}
       {/* <FoodSearch />  */}
-         <StateWise />
+         {/* <StateWise />  */}
+        {/* <Test/>  */}
+         {/* <ContactList/>  */}
+         <SagaExample/>
       </div>
     </StrictMode>
   );
