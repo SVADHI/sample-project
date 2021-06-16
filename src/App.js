@@ -14,6 +14,7 @@ import StateWise from "./Components/covid19/StateWise";
 import Test from "./Components/Route/Test";
 import ContactList from "./Components/ContactList/ContactList";
 import SagaExample from "./Components/Redux-saga/SagaExample";
+import SignUpForm from "./Components/Forms/SignUpForm";
 
 function App() {
   const [show, setshow] = useState(false);
@@ -39,7 +40,7 @@ function App() {
         {/*   <button onClick={() => setshow(true)}>click me</button>
         <Modal show={show} hidemodal={hideModal} onClickYes={onClickYes} /> */}
         {/*   <Redux /> */}
-        {/*    <FoodSearch /> */}
+         <FoodSearch /> 
         {/*  <Position /> */}
         {/*  <ParentFunction /> */}
         {/*  <UseRefComponent /> */}
@@ -47,8 +48,9 @@ function App() {
       {/* <FoodSearch />  */}
          {/* <StateWise />  */}
         {/* <Test/>  */}
-         {/* <ContactList/>  */}
-         <SagaExample/>
+        {/*   <ContactList/>   */}
+         {/* <SagaExample/> */}
+       {/*   <SignUpForm/> */}
       </div>
     </StrictMode>
   );

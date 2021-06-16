@@ -16,8 +16,9 @@
 }
 
 .search-input{
-    width: 90rem;
+    width: 30rem;
     margin-bottom: 5px;
+    margin-left: 30rem;
 }
 .notes{
     font-weight: bolder;

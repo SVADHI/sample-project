@@ -1,5 +1,5 @@
 const initialState = {
-    count: 22,
+    count: 20,
     users:[]
   };
   

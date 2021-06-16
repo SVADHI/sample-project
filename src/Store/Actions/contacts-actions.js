@@ -1,5 +1,6 @@
 
  export const getAllContacts =()=>{
+     console.log("hello contact")
     return {type:"GET_ALL_CONTACTS"}
 }
 export default getAllContacts;

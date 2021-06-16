@@ -15,7 +15,7 @@ import {watchButtonActions} from "./Store/Sagas/buttonActions.sagas"
 import createSagaMiddleWare from "redux-saga";
 const sagaMiddleWare = createSagaMiddleWare();
 
-const store = createStore(SagaButtonReducer, applyMiddleware(sagaMiddleWare));
+const store = createStore(ContactsReducer, applyMiddleware(sagaMiddleWare));
 sagaMiddleWare.run(watchButtonActions);
 ReactDOM.render(
   <React.StrictMode>

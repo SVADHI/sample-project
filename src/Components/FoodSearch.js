@@ -1,11 +1,11 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Recipe from "./Recipe";
 import "./Recipe.css";
 
 const FoodSearch = () => {
   const [recepies, setRecepies] = useState([]);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("chicken");
   const APP_KEY = "162a0bb42178e31553891ebb1cdc2255";
   const APP_ID = "c7784bee";
 
@@ -17,6 +17,11 @@ const FoodSearch = () => {
     console.log(items);
     setRecepies(items);
   };
+
+  useEffect(() => {
+   
+    getData();
+  }, [])
 
   const searchInput = (e) => {
     console.log(e.target.value);
@@ -41,8 +46,9 @@ const FoodSearch = () => {
         <button onClick={onSubmitSearch} className="search-btn">
           submit
         </button>
+        <lable className ="pull-right"> Cart</lable>
         <div className="recipe-list">
-          {recepies.map((recepie) => {
+         {/*  {recepies.map((recepie) => {
             return (
               <Recipe
                 key={recepie.recipe.label}
@@ -52,7 +58,9 @@ const FoodSearch = () => {
                 ingredients={recepie.recipe.ingredients}
               />
             );
-          })}
+          })} */}
+
+          <Recipe data ={recepies}/>
         </div>
       </div>
     </>
